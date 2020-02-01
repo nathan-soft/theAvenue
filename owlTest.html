@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!--Css Files-->
+    <link rel="stylesheet" href="css/Bootstrap4.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/site.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>The Avenue</title>
+
+    <style>
+        .item{
+            background-color: aqua;
+            height: 100px;
+        }
+
+        /* .col-sm-6.col-md-4 {
+            width: 33.3333%;
+        }       */
+    </style>
+    </head>
+    <body>
+        <!--GALLERY-->
+        <section id="gallery" class="py-5 pt-5">
+            <div class="container my-3">
+                <h4 class="col-12 h4 text-center mb-4 text-lightGrey font-weight-light">Past Gallery</h4>
+                <div class="row" id="slick-carousel">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Audience Cross Section_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Cross section of Audience at the Avenue by Edusko Africa.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Cross Section_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Parents Panel_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Student of FUNIS_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Q&A Session_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 d-none">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Corona International School_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 d-none">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Mrs Iloghalu and Alex Goma_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 d-none">
+                        <div class="box">
+                            <img class="img-fluid" src="./imgs/Q&A Session_The Avenue_Edusko.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--GALLERY END-->
+
+
+
+
+
+
+
+        <!-- <div class="row">
+            <div class="works-slideshow text-center">
+                <div class="owl-item">
+                    <div class="col-sm-12 mb-sm-20 wow bounceIn">
+                    <div class="team-item">
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                        <div class="team-image">
+                        <img src="https://via.placeholder.com/350x150" alt="Member Photo" />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        
+
+
+        <!-- JS files -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+        <script>
+            (function() {
+                $("#slick-carousel").slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    rows: 1, // Removes the linear order. Would expect card 5 to be on next row, not stacked in groups.
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: true,
+                    variableWidth: true,
+                    pauseOnHover: true,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 761,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }, {
+                        breakpoint: 544,
+                        settings: {
+                            slidesToShow: 2
+                    }
+                    },  {
+                        breakpoint: 375,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+                });
+
+
+                $('#slick-carousel').slickLightbox(
+                    {
+                        src: 'src',
+                        itemSelector: '.col-sm-6.col-md-4 img'
+                    }
+                );
+
+
+                // $('.works-slideshow .team-item').each(function() {
+                //     var slider = $(this);
+                //     slider.slick({
+                //     arrows: false,
+                //     dots: false,
+                //     accessibility: false,
+                //     infinite: true,
+                //     autoplay: true,
+                //     autoplaySpeed: 5000,
+                //     slidesToShow: 3,
+                //     slidesToScroll: 1,
+                //     responsive: [{
+                //         breakpoint: 600,
+                //         settings: {
+                //             slidesToShow: 2,
+                //             slidesToScroll: 1
+                //         }
+                //         },
+                //         {
+                //         breakpoint: 480,
+                //         settings: {
+                //             slidesToShow: 1,
+                //             slidesToScroll: 1
+                //         }
+                //         }
+                //     ]
+                //     });
+  
+                //     var sLightbox = $(this);
+                //     sLightbox.slickLightbox({
+                //     src: 'src',
+                //     itemSelector: '.team-image img'
+                //     });
+                // });
+
+
+                
+
+
+            })();
+        </script>
+    </body>
+</html>
